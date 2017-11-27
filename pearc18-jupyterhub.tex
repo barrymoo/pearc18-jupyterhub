@@ -39,6 +39,8 @@ narrative'' that is sharable and publishable. JupyterHub is a system for managin
 many user's Jupyter notebooks simultaneously. It provides plumbing for user authentication,
 spawning notebook environments, and managing shared compute resources.
 
+Jupyter and JupyterHub present a new paradigm for research computing, one that is interactive, and often at odds with the systems and interfaces for traditional batch computing.  In this technical paper, we will discuss how we configured Jupyter and JupyterHub to utilize our existing batch computing system, while allowing users, especially new users and students, to use Jupyter, a web-based, interactice computing environment that has a lower barrier to entry. We integrated Jupyter and JupyterHub into the institutional identity management framework which allowed us to leverage existing user management systems and security controls. We also configured JupyterHub as a front-end to multiple computing clusters through the existing batch queuing system (SLURM). 
+
 \begin{itemize}
     \item Authentication
     \begin{itemize}
