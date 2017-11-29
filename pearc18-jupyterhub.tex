@@ -1,4 +1,4 @@
-\title{PEARC18 - Technical Paper Abstract}
+\title{PEARC18 - Interplanetary Paradigm Shifts: Interactive Research Computing with Jupyter}
 \author{
     Barry Moore II$^a$ and Matt Burton$^b$\\
     Center for Research Computing$^a$ \\
@@ -21,7 +21,7 @@
 \usepackage[letterpaper,ignoreall,top=2.65cm,bottom=2.7cm,%
 left=2.0cm,right=2.0cm,foot=1cm,head=1cm]{geometry}
 
-\newcommand{\mycite}[1]{Reference \citen{#1}}
+ ewcommand{\mycite}[1]{Reference \citen{#1}}
 \newcommand{\myfig}[1]{Figure \ref{#1}}
 \newcommand{\myurl}[2]{\href{#1}{\color{blue}{#2}}}
 
@@ -31,15 +31,31 @@ left=2.0cm,right=2.0cm,foot=1cm,head=1cm]{geometry}
 \maketitle
 
 \begin{abstract}
-Jupyter notebooks are a platform for interactive computing and reproducible
-research.  The notebooks are growing in popularity amongst computational
-reseachers in traditional natural sciences as well as social sciences and
-digital humanities. Notebooks blend code, prose, and data into a single ``computational
-narrative'' that is sharable and publishable. JupyterHub is a system for managing
-many user's Jupyter notebooks simultaneously. It provides plumbing for user authentication,
-spawning notebook environments, and managing shared compute resources.
+  Jupyter Notebooks are an increasingly popular platform for interactive
+  computing and publishing reproducible research. They are being used for
+  research and teaching across many disciplines in the natural sciences,
+  computational social sciences, and digital humanities. Notebooks blend code,
+  prose, and data into a single"computational narrative" making research
+  workflows publishable, sharable and reproducible. JupyterHub is a system for
+  managing multi-user Jupyter Notebooks environments, it provides infrastructure
+  for user authentication, launching individual notebook servers, and managing
+  shared compute resources. The benefits of Jupyter are a lower barrier of entry
+  for new and non-traditional users of research computing systems, rapid
+  feedback and results through interactive computation, and easy sharing of
+  research workflows and data-rich results.
 
-Jupyter and JupyterHub present a new paradigm for research computing, one that is interactive, and often at odds with the systems and interfaces for traditional batch computing.  In this technical paper, we will discuss how we configured Jupyter and JupyterHub to utilize our existing batch computing system, while allowing users, especially new users and students, to use Jupyter, a web-based, interactice computing environment that has a lower barrier to entry. We integrated Jupyter and JupyterHub into the institutional identity management framework which allowed us to leverage existing user management systems and security controls. We also configured JupyterHub as a front-end to multiple computing clusters through the existing batch queuing system (SLURM). 
+  Jupyter Notebooks and JupyterHub present a new paradigm for research
+  computing, one that is interactive, web-based, and often at odds with the
+  systems and interfaces for traditional batch computing (SLURM jobs and the SSH
+  command line). In this technical paper, we will discuss how to configure
+  Jupyter and JupyterHub to utilize existing batch computing resources, while
+  allowing users, especially non-traditional users and students, to easily use
+  Jupyter as an interactive computing environment. Optimal deployment of Jupyter
+  and JupyterHub involves integration with institutional identity management
+  systems, to leverage existing user management systems and security controls.
+  Additionally, JupyterHub is used as a front-end to multiple computing clusters
+  and connected to an existing batch queuing system (SLURM).  Additional
+  features and capabilities of the Jupyter Platform will also be discussed.
 
 \begin{itemize}
     \item Authentication
